@@ -8,4 +8,3 @@ workers_dev = true
 AIRTABLE_BASE_ID = "appzVVqLuxVB5TQq7"
 AIRTABLE_TABLE_NAME = "First Table"
 FORM_URL = "https://workers-airtable-form-935.pages.dev/"
-# https://workers-airtable-form.my-worker-testing.workers.dev

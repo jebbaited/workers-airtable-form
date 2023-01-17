@@ -1,5 +1,5 @@
 const SERVERLESS_FN_URL =
-  'https://workers-airtable-form.my-worker-testing.workers.dev/submitHandler';
+  'https://workers-airtable-form.my-worker-testing.workers.dev';
 
 export default () => (
   <form
