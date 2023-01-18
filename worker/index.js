@@ -3,20 +3,7 @@ addEventListener('fetch', event => {
 })
 
 const createAirtableRecord = async body => {
-  // return fetch(
-  //   `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(
-  //     AIRTABLE_TABLE_NAME,
-  //   )}`,
-  //   {
-  //     method: 'POST',
-  //     body: JSON.stringify(body),
-  //     headers: {
-  //       Authorization: `Bearer ${AIRTABLE_API_KEY}`,
-  //       'Content-type': `application/json`,
-  //     },
-  //   },
-  // )
-  const resp = await fetch(
+  return fetch(
     `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(
       AIRTABLE_TABLE_NAME,
     )}`,
@@ -29,11 +16,6 @@ const createAirtableRecord = async body => {
       },
     },
   )
-
-  const data = await resp.json()
-  return new Response(`Here ${JSON.stringify(data)}`, {
-    status: 405,
-  })
 }
 
 const submitHandler = async request => {
@@ -65,8 +47,8 @@ const submitHandler = async request => {
     },
   }
 
-  return createAirtableRecord(reqBody)
-  // return Response.redirect(FORM_URL)
+  await createAirtableRecord(reqBody)
+  return Response.redirect(FORM_URL)
 }
 
 async function handleRequest(request) {
