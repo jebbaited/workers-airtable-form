@@ -6,5 +6,5 @@ workers_dev = true
 
 [vars]
 AIRTABLE_BASE_ID = "appzVVqLuxVB5TQq7"
-AIRTABLE_TABLE_NAME = "First Table"
+AIRTABLE_TABLE_NAME = "FirstTable"
 FORM_URL = "https://workers-airtable-form-935.pages.dev/"
