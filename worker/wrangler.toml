@@ -8,3 +8,4 @@ workers_dev = true
 AIRTABLE_BASE_ID = "appzVVqLuxVB5TQq7"
 AIRTABLE_TABLE_NAME = "First Table"
 FORM_URL = "https://workers-airtable-form-935.pages.dev/"
+CLOUDFLARE_API_TOKEN = "FNJZrXmeT-_D3N3xWq_RRkxUDPHUlJeZAurufOCF"
